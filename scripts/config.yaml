@@ -1,0 +1,27 @@
+cuda_index: 1
+
+bert_path: '../../../opt/embeddings/bert-base-cased'
+
+dataset_dir: '../data/dataset'
+data_dir: '../data/vocab_bert'
+output_dir: 'out_base'
+global_length: 510
+max_seq_length: 128
+
+batch_size: 32
+CLS: '[CLS]'
+SEP: '[SEP]'
+PAD: '[PAD]'
+
+epoch_size: 5
+learning_rate: 0.00005
+max_grad_norm: 1.0
+adam_epsilon: 1e-8
+# adam_epsilon: 0.1
+warmup_steps: 0
+warmup_proportion: 0.1
+gradient_accumulation_steps: 1
+weight_decay: 0.01
+
+do_lower_case: False
+seed: 42
